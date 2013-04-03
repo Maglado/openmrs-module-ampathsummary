@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<module configVersion="1.2">
+
+    <!-- Module Properties -->
+    <id>ampathsummary</id>
+    <name>Ampath Patient Summary Module</name>
+    <version>1.0.0-SNAPSHOT</version>
+    <package>org.openmrs.module.ampathsummary</package>
+    <author>nribeka</author>
+    <description>Extension of the patient summary module by adding ampath specific data definition.</description>
+    <updateURL>https://modules.openmrs.org/modules/download/ampathsummary/update.rdf</updateURL>
+    <require_version>${openMRSVersion}</require_version>
+    <!-- / Module Properties -->
+
+    <!-- Required Modules -->
+    <require_modules>
+        <require_module version="0.7.5">
+            org.openmrs.module.reporting
+        </require_module>
+    </require_modules>
+    <!-- / Required Modules -->
+
+    <!-- Module Activator -->
+    <activator>org.openmrs.module.ampathsummary.AmpathPatientSummaryActivator</activator>
+
+    <!-- Maps hibernate file's, if present -->
+    <mappingFiles>
+
+    </mappingFiles>
+
+    <!-- Internationalization -->
+    <messages>
+        <lang>en</lang>
+        <file>messages.properties</file>
+    </messages>
+    <messages>
+        <lang>fr</lang>
+        <file>messages_fr.properties</file>
+    </messages>
+    <messages>
+        <lang>es</lang>
+        <file>messages_es.properties</file>
+    </messages>
+    <!-- /Internationalization -->
+
+</module>
+
